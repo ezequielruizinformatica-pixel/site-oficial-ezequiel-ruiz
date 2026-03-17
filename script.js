@@ -39,7 +39,7 @@ localStorage.setItem("tipoUsuario", funcionario.tipo);
 
 if(funcionario.tipo === "admin"){
 
-window.location.href = "index.html";
+window.location.href = "admin.html";
 
 }else{
 
@@ -54,7 +54,6 @@ alert("Usuário ou senha inválidos");
 }
 
 }
-
 
 /* LOGOUT */
 
