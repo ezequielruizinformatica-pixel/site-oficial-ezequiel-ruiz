@@ -4,84 +4,31 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Painel Administrativo</title>
+<title>Login - Controle de Ponto</title>
 
 <link rel="stylesheet" href="style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
-
 </head>
 
-<body>
+<body class="login-body">
 
-<div class="container">
+<div class="login-container">
 
-<aside class="menu">
+<h1>🏫 Controle de Ponto</h1>
 
-<h2>🏫 Administração</h2>
+<div class="login-box">
 
-<ul>
+<h2>Login do Funcionário</h2>
 
-<li>Painel</li>
-<li>Registros</li>
-<li>Relatórios</li>
+<input id="usuario" placeholder="Usuário">
 
-</ul>
+<input id="senha" type="password" placeholder="Senha">
 
-</aside>
+<button onclick="login()">Entrar</button>
 
+<p id="erroLogin"></p>
 
-<main class="dashboard">
-
-<header>
-
-<h1>Sistema de Controle de Ponto</h1>
-
-<p id="usuarioLogado"></p>
-
-<button onclick="logout()">Sair</button>
-
-</header>
-
-
-<section class="card">
-
-<h2>Registros de Funcionários</h2>
-
-<table>
-
-<thead>
-
-<tr>
-<th>Funcionário</th>
-<th>Data</th>
-<th>Entrada</th>
-<th>Saída</th>
-</tr>
-
-</thead>
-
-<tbody id="tabelaRegistros"></tbody>
-
-</table>
-
-</section>
-
-
-<section class="card">
-
-<h2>Relatórios</h2>
-
-<button onclick="exportarPDF()">Exportar relatório PDF</button>
-
-<button onclick="limparHistorico()" style="background:#e74c3c;color:white;margin-left:10px;">
-Limpar Histórico
-</button>
-
-</section>
-
-</main>
+</div>
 
 </div>
 
