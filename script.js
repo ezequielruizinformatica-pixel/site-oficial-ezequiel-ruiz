@@ -39,7 +39,7 @@ localStorage.setItem("tipoUsuario", funcionario.tipo);
 
 if(funcionario.tipo === "admin"){
 
-window.location.href = "admin.html";
+window.location.href = "index.html";
 
 }else{
 
