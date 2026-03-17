@@ -16,8 +16,19 @@ usuario:"Roseane",
 senha:"123",
 nome:"Roseane Bastos Ferreira",
 tipo:"funcionario"
+},
+{
+usuario:"Estephane",
+senha:"140620",
+nome:"Estephane da Cruz Fontes",
+tipo:"funcionario"
+},
+{
+usuario:"Weyna",
+senha:"123",
+nome:"Weyna Santos Trindade",
+tipo:"funcionario"
 }
-
 ];
 
 
